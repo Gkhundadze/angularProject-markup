@@ -1,8 +1,29 @@
-<div>
-    <h3>calculator</h3>
-    <input type="number" #num1>
+<div class="add">
+    <h3>{{errorMessage}}</h3>
+    <input placeholder="a" type="number" #num1>
     <span>+</span>
-    <input type="number" #num2>
+    <input placeholder="b" type="number" #num2>
     <button (click)="add(num1, num2)">=</button>
-    <span>{{result}}</span>
+    <span class="result">{{result}}</span>
+</div>
+<div class="sub">
+    <input placeholder="a" type="number" #num3>
+    <span>-</span>
+    <input placeholder="b" type="number" #num4>
+    <button (click)="sub(num3, num4)">=</button>
+    <span class="result">{{result2}}</span>
+</div>
+<div class="mult">
+    <input placeholder="a" type="number" #num5>
+    <span>*</span>
+    <input placeholder="b" type="number" #num6>
+    <button (click)="mult(num5, num6)">=</button>
+    <span class="result">{{result3}}</span>
+</div>
+<div class="div">
+    <input placeholder="a" type="number" #num7>
+    <span>/</span>
+    <input placeholder="b" type="number" #num8>
+    <button (click)="div(num7, num8)">=</button>
+    <span class="result">{{result4}}</span>
 </div>

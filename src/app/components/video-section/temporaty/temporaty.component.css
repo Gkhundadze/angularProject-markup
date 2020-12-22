@@ -7,3 +7,18 @@ h3{
     left: 50%;
     transform: translateX(-50%);
 }
+.add{
+    margin-bottom: 10px;
+}
+.sub{
+    margin-bottom: 10px;
+}
+.mult{
+    margin-bottom: 10px;
+}
+.div{
+    /* margin-bottom: 10px; */
+}
+.result{
+    margin-left: 5px;
+}
