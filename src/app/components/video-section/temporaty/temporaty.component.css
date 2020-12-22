@@ -6,6 +6,7 @@ h3{
     top: 5px;
     left: 50%;
     transform: translateX(-50%);
+    color: rgb(34, 119, 91);
 }
 .add{
     margin-bottom: 10px;
@@ -21,4 +22,10 @@ h3{
 }
 .result{
     margin-left: 5px;
+}
+.test{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
