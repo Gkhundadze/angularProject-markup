@@ -1,0 +1,19 @@
+.video-section{
+    background-color: #363E97;
+}
+.textbox-parrent{
+    padding: 90px 0;
+}
+.text-box{
+    max-width: 570px;
+    height: 320px;
+    position: relative; /* temporary, for calculator*/
+}
+.video-section-link:first-child{
+    border-right: 1px solid #ffffff;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+.video-section-link{
+    padding: 1px;
+}

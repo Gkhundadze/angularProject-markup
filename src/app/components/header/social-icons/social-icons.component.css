@@ -1,0 +1,19 @@
+.social-box{
+    padding: 0 30px;
+}
+.social-box:first-child{
+    padding-left: 0;
+}
+.social-box:last-child{
+    border: 0;
+    padding-right: 0;
+}
+.social-img{
+    width: 30px;
+    height: 30px;
+}
+.social-box{
+    border-right-color: #3D58A6;
+    border-right-width: 1px;
+    border-right-style: solid;
+}

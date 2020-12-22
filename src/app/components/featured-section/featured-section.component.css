@@ -1,0 +1,41 @@
+.featured-section{
+    background-color: #E6E6E6;
+    height: 100%;
+    padding-bottom: 90px;
+}
+.featured-section-parrent-div{
+    overflow: hidden;
+}
+.featured-section .video-section-link:first-child{
+    border-right: 1px solid black;
+}
+.featured-div-box{
+    max-width: 570px;
+    height: 225px;
+    background-color: #F2F2F2;
+    padding: 2%;
+}
+.featured-div-box h2, button{
+    color: #3D58A6;
+}
+.featured-div-box-child{
+    height: 130px;
+    margin-top: 3%;
+}
+.featured-div-box-child img{
+    display: block;
+    
+}
+.featured-div-box-child p{
+    margin-left: 5%;
+    font-size: 22px;
+    line-height: 25px;
+    color: #58595B;
+    
+}
+.read-more-btn{
+    right: 2.5%;
+    bottom: 5%;
+    border: none;
+    cursor: pointer;
+}

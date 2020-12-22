@@ -1,0 +1,36 @@
+
+.cards-section{
+    background-color: #BDCCD4;
+}
+.title{
+    padding: 45px 0;
+    font-size: 24px;
+}
+.cards-title{
+    color: #3D58A6;
+}
+.cards-section .video-section-link:first-child{
+    border-right: 1px solid #3D58A6;
+    color: #3D58A6;
+}
+.card-box-parrent{
+    padding-bottom: 90px;
+    font-size: 24px;
+    flex-wrap: wrap;
+}
+.card-box{
+    max-width: 270px;
+    height: 270px;
+}
+.card-box-img{
+    height: 210px;
+}
+.card-box-title{
+    background-color: #E6E6E6;
+    line-height: 60px;
+    padding-left: 5%;
+    white-space: nowrap;
+}
+.card-box:nth-child(n+5){
+    margin-top: 2%;
+}

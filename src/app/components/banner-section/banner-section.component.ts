@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner-section.component.css']
 })
 export class BannerSectionComponent implements OnInit {
-
+  
   constructor() { }
+  
 
   ngOnInit(): void {
   }
-
+ 
 }

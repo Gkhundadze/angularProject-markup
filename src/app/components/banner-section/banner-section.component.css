@@ -1,0 +1,22 @@
+.banner-img{
+    max-width: 1170px;
+}
+.banner-section{
+    background-color: #E6E6E6;
+    padding: 30px 0;
+}
+.banner-text-left{
+    left: 2.5%;
+    bottom: 5%;
+}
+.banner-text-left ul{
+    font-size: 24px;
+}
+.banner-text-right{
+    right: 2.5%;
+    bottom: 5%;
+}
+.banner-text-right img{
+    height: 30px;
+    max-width: 100px;
+}
