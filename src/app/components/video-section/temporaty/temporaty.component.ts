@@ -6,8 +6,13 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./temporaty.component.css']
 })
 export class TemporatyComponent implements OnInit {
-  public errorMessage:string = "Calculator Works";
-  public testVatiable:string = ":D"
+  public errorMessage: string = "Calculator Works";
+
+  public testVatiable: any = {
+    name: "john",
+    lastName: "Williams"
+  };
+
   public result: number;
   public result2: number;
   public result3: number;
@@ -20,7 +25,6 @@ export class TemporatyComponent implements OnInit {
     let val2 = parseInt(num2.value);
     let res = val + val2;
     this.result = res;
-    
   }
   sub(num3, num4): void {
     let val = parseInt(num3.value);
@@ -34,10 +38,30 @@ export class TemporatyComponent implements OnInit {
     let res = val * val2;
     this.result3 = res;
   }
-  div(num7, num8): void {
-    let val = parseInt(num7.value);
-    let val2 = parseInt(num8.value);
-    let res = val / val2;
-    this.result4 = res;
+  someOperation(type, num1, num2): void {
+    if (type == "/") {
+      let val = parseInt(num1.value);
+      let val2 = parseInt(num2.value);
+      let res = val / val2;
+      this.result4 = res;
+    }
+    if (type == "*") {
+      let val = parseInt(num1.value);
+      let val2 = parseInt(num2.value);
+      let res = val * val2;
+      this.result3 = res;
+    }
+    if (type == "-") {
+      let val = parseInt(num1.value);
+      let val2 = parseInt(num2.value);
+      let res = val - val2;
+      this.result2 = res;
+    }
+    if (type == "+") {
+      let val = parseInt(num1.value);
+      let val2 = parseInt(num2.value);
+      let res = val + val2;
+      this.result = res;
+    }
   }
 }

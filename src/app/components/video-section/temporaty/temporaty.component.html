@@ -1,30 +1,32 @@
 <div class="add">
     <h3>{{errorMessage}}</h3>
-    <p class="test">{{testVatiable}}</p>
-    <input placeholder="a" type="number" #num1>
+
+    <p class="test">{{testVatiable.name}} {{testVatiable.lastName}}</p>
+
+    <input placeholder="a" type="number" #number1>
     <span>+</span>
-    <input placeholder="b" type="number" #num2>
-    <button (click)="add(num1, num2)">=</button>
+    <input placeholder="b" type="number" #number2>
+    <button (click)="someOperation('+', number1, number2)">=</button>
     <span class="result">{{result}}</span>
 </div>
 <div class="sub">
-    <input placeholder="a" type="number" #num3>
+    <input placeholder="a" type="number" #number1>
     <span>-</span>
-    <input placeholder="b" type="number" #num4>
-    <button (click)="sub(num3, num4)">=</button>
+    <input placeholder="b" type="number" #number2>
+    <button (click)="someOperation('-', number1, number2)">=</button>
     <span class="result">{{result2}}</span>
 </div>
 <div class="mult">
-    <input placeholder="a" type="number" #num5>
+    <input placeholder="a" type="number" #number1>
     <span>*</span>
-    <input placeholder="b" type="number" #num6>
-    <button (click)="mult(num5, num6)">=</button>
+    <input placeholder="b" type="number" #number2>
+    <button (click)="someOperation('*', number1, number2)">=</button>
     <span class="result">{{result3}}</span>
 </div>
 <div class="div">
-    <input placeholder="a" type="number" #num7>
+    <input placeholder="a" type="number" #number1>
     <span>/</span>
-    <input placeholder="b" type="number" #num8>
-    <button (click)="div(num7, num8)">=</button>
+    <input placeholder="b" type="number" #number2>
+    <button (click)="someOperation('/', number1, number2)">=</button>
     <span class="result">{{result4}}</span>
 </div>
