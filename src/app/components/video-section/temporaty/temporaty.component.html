@@ -1,32 +1,34 @@
+<h3>{{errorMessage}}</h3>
+<p class="test">{{testVatiable.name}} {{testVatiable.lastName}}</p>
 <div class="add">
-    <h3>{{errorMessage}}</h3>
-
-    <p class="test">{{testVatiable.name}} {{testVatiable.lastName}}</p>
-
+    <!-- <span class="title-operation">Add</span> -->
     <input placeholder="a" type="number" #number1>
-    <span>+</span>
+    <span> + </span>
     <input placeholder="b" type="number" #number2>
     <button (click)="someOperation('+', number1, number2)">=</button>
     <span class="result">{{result}}</span>
 </div>
 <div class="sub">
-    <input placeholder="a" type="number" #number1>
-    <span>-</span>
-    <input placeholder="b" type="number" #number2>
-    <button (click)="someOperation('-', number1, number2)">=</button>
+    <!-- <span class="title-operation">Substract</span> -->
+    <input placeholder="a" type="number" #number3>
+    <span> - </span>
+    <input placeholder="b" type="number" #number4>
+    <button (click)="someOperation('-', number3, number4)">=</button>
     <span class="result">{{result2}}</span>
 </div>
 <div class="mult">
-    <input placeholder="a" type="number" #number1>
-    <span>*</span>
-    <input placeholder="b" type="number" #number2>
-    <button (click)="someOperation('*', number1, number2)">=</button>
+    <!-- <span class="title-operation">Multiply</span> -->
+    <input placeholder="a" type="number" #number5>
+    <span> * </span>
+    <input placeholder="b" type="number" #number6>
+    <button (click)="someOperation('*', number5, number6)">=</button>
     <span class="result">{{result3}}</span>
 </div>
 <div class="div">
-    <input placeholder="a" type="number" #number1>
-    <span>/</span>
-    <input placeholder="b" type="number" #number2>
-    <button (click)="someOperation('/', number1, number2)">=</button>
+    <!-- <span class="title-operation">Divide</span> -->
+    <input placeholder="a" type="number" #number7>
+    <span> / </span>
+    <input placeholder="b" type="number" #number8>
+    <button (click)="someOperation('/', number7, number8)">=</button>
     <span class="result">{{result4}}</span>
 </div>

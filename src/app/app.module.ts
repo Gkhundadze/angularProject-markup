@@ -11,6 +11,7 @@ import { FeaturedSectionComponent } from './components/featured-section/featured
 import { NavigationComponent } from './components/header/navigation/navigation.component';
 import { SocialIconsComponent } from './components/header/social-icons/social-icons.component';
 import { TemporatyComponent } from './components/video-section/temporaty/temporaty.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TemporatyComponent } from './components/video-section/temporaty/tempora
   ],
   imports: [
     BrowserModule,
-    FormsModule 
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

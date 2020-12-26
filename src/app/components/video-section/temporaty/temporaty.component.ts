@@ -20,48 +20,41 @@ export class TemporatyComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
   }
-  add(num1, num2): void {
-    let val = parseInt(num1.value);
-    let val2 = parseInt(num2.value);
-    let res = val + val2;
-    this.result = res;
-  }
-  sub(num3, num4): void {
-    let val = parseInt(num3.value);
-    let val2 = parseInt(num4.value);
-    let res = val - val2;
-    this.result2 = res;
-  }
-  mult(num5, num6): void {
-    let val = parseInt(num5.value);
-    let val2 = parseInt(num6.value);
-    let res = val * val2;
-    this.result3 = res;
-  }
-  someOperation(type, num1, num2): void {
-    if (type == "/") {
-      let val = parseInt(num1.value);
-      let val2 = parseInt(num2.value);
-      let res = val / val2;
-      this.result4 = res;
+  // add(num1, num2): void {
+  //   let val = parseInt(num1.value);
+  //   let val2 = parseInt(num2.value);
+  //   let res = val + val2;
+  //   this.result = res;
+  // }
+  // sub(x, y): void {
+  //   let val = parseInt(x.value);
+  //   let val2 = parseInt(y.value);
+  //   let res = val - val2;
+  //   this.result2 = res;
+  // }
+  // mult(num5, num6): void {
+  //   let val = parseInt(num5.value);
+  //   let val2 = parseInt(num6.value);
+  //   let res = val * val2;
+  //   this.result3 = res;
+  // }
+  someOperation(type, x, y): void {
+    let xVal = parseInt(x.value);
+    let yVal = parseInt(y.value);
+    if(type =='+'){
+     this.result = xVal + yVal;
     }
-    if (type == "*") {
-      let val = parseInt(num1.value);
-      let val2 = parseInt(num2.value);
-      let res = val * val2;
-      this.result3 = res;
+    else if(type =='-'){
+      this.result2 = xVal - yVal;
     }
-    if (type == "-") {
-      let val = parseInt(num1.value);
-      let val2 = parseInt(num2.value);
-      let res = val - val2;
-      this.result2 = res;
+    else if(type =='*'){
+      this.result3 = xVal * yVal;
     }
-    if (type == "+") {
-      let val = parseInt(num1.value);
-      let val2 = parseInt(num2.value);
-      let res = val + val2;
-      this.result = res;
+    else{
+      this.result4 = xVal / yVal;
     }
+    console.log(type, xVal, yVal)
+    
+  
   }
 }
